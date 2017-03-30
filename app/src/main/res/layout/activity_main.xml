@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="hr.ferit.mdudjak.unitconverter.MainActivity">
+
+<ImageButton
+    android:scaleType="centerInside"
+    android:id="@+id/ImageButtonFirst"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/ImageViewPortraitHeight"
+    android:layout_alignParentTop="true"
+    android:foregroundGravity="center"
+    android:src="@drawable/temperature"
+    android:backgroundTint="@color/colorBackgroundTintImageButtonFirst"
+    android:tint="@color/colorTintImageButtonText"
+    />
+
+<ImageButton
+    android:scaleType="centerInside"
+    android:id="@+id/ImageButtonSecond"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/ImageViewPortraitHeight"
+    android:layout_below="@+id/ImageButtonFirst"
+    android:foregroundGravity="center"
+    android:src="@drawable/weight"
+    android:backgroundTint="@color/colorBackgroundTintImageButtonSecond"
+    android:tint="@color/colorTintImageButtonText"/>
+
+<ImageButton
+    android:scaleType="centerInside"
+    android:id="@+id/ImageButtonThird"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/ImageViewPortraitHeight"
+    android:layout_below="@+id/ImageButtonSecond"
+    android:foregroundGravity="center"
+    android:src="@drawable/distance"
+    android:backgroundTint="@color/colorBackgroundTintImageButtonThird"
+    android:tint="@color/colorTintImageButtonText"/>
+
+<ImageButton
+    android:id="@+id/ImageButtonFourth"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/ImageViewPortraitHeight"
+    android:layout_below="@+id/ImageButtonThird"
+    android:foregroundGravity="center"
+    android:scaleType="centerInside"
+    android:src="@drawable/time"
+    android:backgroundTint="@color/colorBackgroundTintImageButtonFourth"
+    android:tint="@color/colorTintImageButtonText"/>
+
+</RelativeLayout>

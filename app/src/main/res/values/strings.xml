@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Unit Converter</string>
+    <string name="TitleBarText">Welcome to Unit Converter!</string>
+</resources>
