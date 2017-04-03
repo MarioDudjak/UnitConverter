@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:textAlignment="center"
+    tools:context="hr.ferit.mdudjak.unitconverter.DataReceiverActivity">
+<TextView
+    android:id="@+id/txtValueToConvert"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textAlignment="center"
+    android:layout_marginTop="@dimen/marginTopTextViewValueDataReceiver"
+    android:layout_alignParentTop="true"
+    android:textColor="@color/colorTintImageButtonText"
+    android:textSize="@dimen/txtSizeTitleTemperatureActivity"
+    android:text="baadsa"
+    />
+<TextView
+    android:id="@+id/txtUnitToConvert"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textAlignment="center"
+    android:layout_marginTop="@dimen/marginTopTextViewDataReceiver"
+    android:layout_below="@+id/txtValueToConvert"
+    android:textColor="@color/colorTintImageButtonText"
+    android:textSize="@dimen/txtSizeFirstUnitPickTemperatureActivity"
+    android:text="sada"/>
+<TextView
+    android:id="@+id/txtConvertedValue"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textAlignment="center"
+    android:layout_marginTop="@dimen/marginTopTextViewValueDataReceiver"
+    android:layout_below="@+id/txtUnitToConvert"
+    android:textColor="@color/colorTintImageButtonText"
+    android:textSize="@dimen/txtSizeTitleTemperatureActivity"
+    android:text="asdsa"/>
+<TextView
+    android:id="@+id/txtConvertedUnit"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textAlignment="center"
+    android:layout_marginTop="@dimen/marginTopTextViewDataReceiver"
+    android:layout_below="@+id/txtConvertedValue"
+    android:textColor="@color/colorTintImageButtonText"
+    android:textSize="@dimen/txtSizeFirstUnitPickTemperatureActivity"
+    android:inputType="numberDecimal"
+    android:text="sa"/>
+</RelativeLayout>

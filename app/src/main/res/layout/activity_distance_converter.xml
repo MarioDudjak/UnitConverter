@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="hr.ferit.mdudjak.unitconverter.DistanceConverterActivity"
+    android:background="@color/colorBackgroundTintImageButtonThird"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txtTitleDistanceActivity"
+        android:textSize="@dimen/txtSizeTitleTemperatureActivity"
+        android:paddingBottom="@dimen/paddingTitleTemperatureActivity"
+        android:textColor="@color/colorTintImageButtonText"
+        android:textAlignment="center"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/txtFirstUnitPickTemperatureActivity"
+        android:textSize="@dimen/txtSizeFirstUnitPickTemperatureActivity"
+        android:textColor="@color/colorTintImageButtonText"
+        android:paddingBottom="@dimen/paddingTextView"
+        android:paddingTop="@dimen/paddingTextView"
+        android:layout_marginLeft="@dimen/marginTextView"
+        />
+
+    <Spinner
+        android:id="@+id/DistanceFromSpinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></Spinner>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/txtSecondUnitPickTemperatureActivity"
+        android:textSize="@dimen/txtSizeFirstUnitPickTemperatureActivity"
+        android:textColor="@color/colorTintImageButtonText"
+        android:paddingTop="@dimen/paddingTextView"
+        android:paddingBottom="@dimen/paddingTextView"
+        android:layout_marginLeft="@dimen/marginTextView"
+        />
+
+    <Spinner
+        android:id="@+id/DistanceToSpinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></Spinner>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/marginTextView"
+        android:paddingTop="@dimen/paddingTextView"
+        android:paddingBottom="@dimen/paddingTextView"
+        android:text="@string/txtInput"
+        android:textSize="@dimen/txtSizeFirstUnitPickTemperatureActivity"
+        android:textColor="@color/colorTintImageButtonText"
+        />
+
+    <EditText
+        android:id="@+id/etxtValue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/marginTextView"
+        android:layout_marginRight="@dimen/marginTextView"
+        android:hint="@string/txtHint"
+        android:imeOptions="actionDone"
+        android:singleLine="true"
+        android:maxLines="1"
+        android:inputType="numberDecimal"
+        android:layout_gravity="center"
+        android:background="@color/colorTintImageButtonText"
+        />
+
+    <Button
+        android:id="@+id/bCalculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/marginTopButton"
+        android:text="@string/txtButton"
+        android:textAlignment="center"
+        />
+
+</LinearLayout>

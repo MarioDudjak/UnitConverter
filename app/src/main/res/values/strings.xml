@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Unit Converter</string>
+    <string name="TitleBarText">Welcome to Unit Converter!</string>
+    <string name="txtTitleTemperatureActivity">TEMPERATURE CONVERSION</string>
+    <string name="txtFirstUnitPickTemperatureActivity">Choose from which unit would you like to convert:</string>
+    <string name="txtSecondUnitPickTemperatureActivity">Choose to which unit would you like to convert:</string>
+    <string name="txtInput">Input value which you would like to convert:</string>
+    <string name="txtHint">For example: 75</string>
+    <string name="txtButton">Calculate</string>
+    <string name="txtTitleWeightActivity">WEIGHT CONVERSION</string>
+    <string name="txtTitleDistanceActivity">DISTANCE CONVERTER</string>
+    <string name="txtTitleTimeActivity">TIME CONVERTER</string>
+    <string-array name="TemperatureSpinner">
+        <item>Celsius</item>
+        <item>Fahrenheit</item>
+        <item>Kelvin</item>
+    </string-array>
+    <string-array name="WeightSpinner">
+        <item>Kilogram</item>
+        <item>Pound</item>
+        <item>Ounce</item>
+    </string-array>
+    <string-array name="DistanceSpinner">
+        <item>Meter</item>
+        <item>Inch</item>
+        <item>Yard</item>
+    </string-array>
+    <string-array name="TimeSpinner">
+        <item>Hour</item>
+        <item>Day</item>
+        <item>Week</item>
+    </string-array>
+</resources>
