@@ -1,4 +1,0 @@
--poveæati time png
--promijeniti ikonu aplikacije
--promijeniti ime ikone i ime title bara
--Github i readme.md 
