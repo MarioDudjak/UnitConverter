@@ -33,7 +33,7 @@ In the default state, a spinner shows its currently selected value.
 Touching the spinner displays a dropdown menu with all other available values, from which the user can select a new one.
 Firstly in resources file string-array was defined:
 
-<string-array name="TemperatureSpinner">
+string-array name="TemperatureSpinner"
         <item>Celsius</item>
         <item>Fahrenheit</item>
         <item>Kelvin</item>
