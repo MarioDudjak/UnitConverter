@@ -69,7 +69,7 @@
         android:layout_marginRight="@dimen/marginTextView"
         android:hint="@string/txtHint"
         android:imeOptions="actionDone"
-        android:inputType="numberDecimal"
+        android:inputType="numberDecimal|numberSigned"
         android:singleLine="true"
         android:maxLines="1"
         android:layout_gravity="center"
