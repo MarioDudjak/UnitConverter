@@ -12,5 +12,6 @@
     <dimen name="marginTopButton">50dp</dimen>
     <dimen name="marginTopLandscapeButton">10dp</dimen>
     <dimen name ="marginTopTextViewDataReceiver">20dp</dimen>
+    <dimen name ="marginTopTextViewLandscapeDataReceiver">10dp</dimen>
     <dimen name ="marginTopTextViewValueDataReceiver">40dp</dimen>
 </resources>

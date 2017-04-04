@@ -3,11 +3,15 @@ package hr.ferit.mdudjak.unitconverter;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
-public class DataReceiverActivity extends AppCompatActivity {
+public class DataReceiverActivity extends AppCompatActivity implements View.OnClickListener {
 
     TextView txtValueFrom, txtValueTo, txtUnitFrom, txtUnitTo;
+    ImageButton bReturn;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -20,6 +24,8 @@ public class DataReceiverActivity extends AppCompatActivity {
     this. txtValueTo = (TextView) findViewById(R.id.txtConvertedValue);
     this. txtUnitFrom = (TextView) findViewById(R.id.txtUnitToConvert);
     this.txtUnitTo = (TextView) findViewById(R.id.txtConvertedUnit);
+    this.bReturn= (ImageButton) findViewById(R.id.ImageButtonReturn);
+    this.bReturn.setOnClickListener(this);
     Intent startingIntent = this.getIntent();
     if(startingIntent.hasExtra(TemperatureConverterActivity.KEY_INPUT_DATA)){
         txtValueFrom.setText(startingIntent.getStringExtra(TemperatureConverterActivity.KEY_INPUT_DATA));
@@ -46,5 +52,12 @@ public class DataReceiverActivity extends AppCompatActivity {
         txtValueTo.setText(startingIntent.getStringExtra(TimeConverterActivity.KEY_OUTPUT_DATA));
     }
 
+    }
+
+    @Override
+    public void onClick(View v) {
+        Intent explicitIntent= new Intent();
+        explicitIntent.setClass(getApplicationContext(),MainActivity.class);
+        this.startActivity(explicitIntent);
     }
 }

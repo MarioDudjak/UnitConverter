@@ -25,6 +25,8 @@ Every layout for data input has title in a TextView, 3 TextViews as labels, 2 Sp
 Input value for EditText is set to number decimal, and maximal number of lines is 1. 
 Also, EditText has option actionDone to show OK button for finishing input without the need to press back button on device.
 
+Every .xml file for layout is written seperately for portrait and landscape layout.Every landscape .xml is in layout-land folder and it contains same elements like portrait layout (with same id for every element) only different dimensions.
+ 
 
 *Working with Spinner:
 
@@ -33,10 +35,10 @@ In the default state, a spinner shows its currently selected value.
 Touching the spinner displays a dropdown menu with all other available values, from which the user can select a new one.
 Firstly in resources file string-array was defined:
 
-string-array name="TemperatureSpinner"
+<!-- <string-array name="TemperatureSpinner">
         <item>Celsius</item>
         <item>Fahrenheit</item>
-        <item>Kelvin</item>
+        <item>Kelvin</item> -->
 
 Spinner is suplied with defined string-array by using an instance of ArrayAdapter:
 
